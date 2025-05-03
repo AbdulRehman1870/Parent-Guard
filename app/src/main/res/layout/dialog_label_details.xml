@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_rounded_cute"
+    android:padding="24dp"> <!-- Padding already in bg_dialog_rounded_cute, but can adjust here -->
+
+    <TextView
+        android:id="@+id/dialogTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Label Details"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/text_title_cute"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_info_cute"
+        app:tint="@color/primary_cute"
+        android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/dialogCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Count: 0"
+            android:textSize="17sp"
+            android:textColor="@color/text_primary_cute"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messages:"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:textColor="@color/primary_cute"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="250dp"
+        android:background="@drawable/bg_textview_rounded_cute"
+        android:padding="2dp"> <!-- Minimal padding, bg_textview_rounded_cute has its own -->
+
+        <TextView
+            android:id="@+id/dialogMessagesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/text_secondary_cute"
+            android:padding="10dp"
+            android:lineSpacingExtra="6dp"/>
+    </ScrollView>
+
+</LinearLayout>

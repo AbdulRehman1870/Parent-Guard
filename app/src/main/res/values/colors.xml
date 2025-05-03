@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_background">#FFF5F5FF</color>
+    <color name="primary_text">#2E3B4E</color>
+    <color name="secondary_text">#5A6B8A</color>
+    <color name="tertiary_text">#8A96B0</color>
+
+    <!-- Gradient colors for chart -->
+    <color name="color_excellent">#4CAF50</color>
+    <color name="color_good">#8BC34A</color>
+    <color name="color_normal">#FFC107</color>
+    <color name="color_needs_attention">#FF9800</color>
+    <color name="color_critical">#F44336</color>
+
+    <color name="chart_grid">#E0E0E0</color>
+    <color name="chart_text">#607D8B</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="textColorClickable">#0066CC</color> <!-- For clickable labels -->
+    <color name="tableRowEven">#FFFFFF</color>
+    <color name="tableRowOdd">#F5F5F5</color>
+
+
+
+    <color name="colorPositiveScore">#4CAF50</color> <!-- Example Green -->
+
+
+
+
+
+    <!-- NEW CUTE & ATTRACTIVE THEME -->
+    <color name="app_bg_light">#FFF7F2</color>      <!-- Very light, warm off-white / soft peach -->
+    <color name="card_bg_light">#FFFFFF</color>     <!-- White for cards -->
+    <color name="primary_cute">#FF8A80</color>     <!-- Soft Coral/Pink - Main interactive elements -->
+    <color name="primary_dark_cute">#E57373</color> <!-- Slightly darker coral for titles/emphasis -->
+    <color name="accent_cute">#80DEEA</color>       <!-- Light Cyan/Aqua - for accents if needed -->
+
+    <color name="text_title_cute">#5D4037</color>   <!-- Soft Brown for titles -->
+    <color name="text_primary_cute">#795548</color>  <!-- Soft Brown for primary text -->
+    <color name="text_secondary_cute">#A1887F</color><!-- Lighter Brown for secondary text -->
+    <color name="text_on_primary_cute">#FFFFFF</color><!-- Text on primary_cute color backgrounds -->
+
+    <color name="divider_cute">#D7CCC8</color>      <!-- Soft Brownish Gray for dividers/borders -->
+    <color name="icon_tint_cute">#8D6E63</color>    <!-- For icons -->
+
+    <color name="spinner_arrow_cute">@color/primary_cute</color> <!-- Spinner arrow color -->
+
+
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <!-- Custom App Colors -->
+    <color name="app_bg_color">#F0F4F7</color> <!-- Light, airy background -->
+    <color name="card_bg_color">#FFFFFF</color>
+    <color name="text_primary_dark">#2C3E50</color> <!-- Dark blue-gray for titles -->
+    <color name="text_secondary_dark">#34495E</color> <!-- Slightly lighter for body text -->
+    <color name="text_light_gray">#7F8C8D</color> <!-- For less important text or placeholders -->
+    <color name="text_no_data">#555555</color>
+
+    <color name="accent_insight_green">#1ABC9C</color> <!-- Teal/Green for insights -->
+    <color name="accent_tip_blue">#3498DB</color> <!-- Bright Blue for tips -->
+    <color name="accent_motivation_blue">#2980B9</color>
+
+    <color name="summary_card_bg">#E8F6FD</color> <!-- Light blue for summary card -->
+    <color name="summary_card_stroke">#BEE3F8</color>
+
+    <!-- Score Progress Bar Colors -->
+    <color name="score_low">#E74C3C</color>     <!-- Reddish -->
+    <color name="score_medium">#F1C40F</color>  <!-- Yellowish -->
+    <color name="score_high">#2ECC71</color>    <!-- Greenish -->
+    <color name="progress_bar_bg_default">#E0E0E0</color>
+
+
+
+
+
+
+    <color name="bgColor">#F0F2F5</color> <!-- Thora halka background -->
+
+    <color name="cardScreenTimeBg">#E0F7FA</color> <!-- Light Cyan -->
+    <color name="cardScreenTimeIconText">#00796B</color> <!-- Dark Teal -->
+
+    <color name="cardSetTimeBg">#E8F5E9</color> <!-- Light Green -->
+    <color name="cardSetTimeIconText">#388E3C</color> <!-- Dark Green -->
+
+    <color name="cardGeofenceBg">#FFF9C4</color> <!-- Light Yellow -->
+    <color name="cardGeofenceIconText">#FBC02D</color> <!-- Dark Yellow/Gold -->
+
+    <color name="cardMistakesBg">#FFEBEE</color> <!-- Light Pink -->
+    <color name="cardMistakesIconText">#D32F2F</color> <!-- Dark Red -->
+
+    <color name="cardSentimentsBg">#E1F5FE</color> <!-- Light Blue -->
+    <color name="cardSentimentsIconText">#1976D2</color> <!-- Dark Blue -->
+
+    <color name="cardLocationBg">#E3F2FD</color> <!-- Light Blue -->
+    <color name="cardLocationIconText">#1565C0</color> <!-- Dark Blue -->
+
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="titleColor">#333333</color>
+
+    <!-- Navigation Bar Colors -->
+    <color name="navBarColor">#FFFFFF</color>
+    <color name="navBarSelectedColor">#6200EE</color>
+    <color name="navBarUnselectedColor">#757575</color>
+
+
+
+
+
+
+    <!-- Emotion Colors -->
+    <color name="emotion_sadness">#6495ED</color> <!-- Cornflower Blue -->
+    <color name="emotion_joy">#FFD700</color>     <!-- Gold -->
+    <color name="emotion_love">#FF69B4</color>    <!-- Hot Pink -->
+    <color name="emotion_anger">#FF4500</color>   <!-- Orange Red -->
+    <color name="emotion_fear">#8A2BE2</color>    <!-- Blue Violet -->
+    <color name="emotion_surprise">#00CED1</color> <!-- Dark Turquoise -->
+    <color name="emotion_default">#A9A9A9</color> <!-- Dark Gray for others -->
+    <color name="card_background_light">#F5F5F5</color>
+
+
+
+
+
+    <color name="light_blue_background">#E8F0FE</color>
+    <color name="dark_text">#333333</color>
+    <color name="medium_text">#555555</color>
+    <color name="accent_link_blue">#007BFF</color>
+    <color name="card_title_text">#444444</color>
+    <color name="card_content_text">#5A5A5A</color>
+    <color name="status_text_color">#777777</color>
+
+
+    <color name="colorBackground">#F5F5F5</color> <!-- Light Grey Background -->
+    <color name="bottom_nav_item_selected">@color/colorPrimary</color>
+    <color name="bottom_nav_item_unselected">#757575</color> <!-- Grey -->
+
+    <color name="colorPrimaryLight">#E1F5FE</color> <!-- A very light shade of your primary color -->
+
+
+    <color name="toolbarTitleColor">#212121</color>
+
+    <color name="toolbarBackground">#FFFFFF</color>
+
+    <color name="icon_selected_green">#4CAF50</color> <!-- Example Green Color -->
+    <color name="icon_unselected_grey">#757575</color>
+
+
+
+    <!-- Naye Colors -->
+    <color name="splash_background_dark_blue">#FF1A237E</color> <!-- Indigo 900 jaisa -->
+    <color name="splash_text_title_white">#FFFFFFFF</color>
+    <color name="splash_text_subtitle_white_subtle">#B3FFFFFF</color> <!-- White with ~70% opacity -->
+
+
+    <color name="medium_light_purple_vibrant">#BA68C8</color>
+    <color name="medium_light_purple_muted">#EF2A4481</color>
+
+
+
+    <!-- Updated Splash Screen Colors -->
+    <color name="splash_background_light_blue">#FF64B5F6</color>
+
+
+    <color name="editTextBackground">#FFFFFF</color>
+    <color name="editTextBorder">#BDBDBD</color>
+
+    <color name="windowBackground">#F8F9FA</color> <!-- Thoda lighter grey -->
+    <color name="buttonTextColor">#FFFFFF</color>
+
+
+    <!-- Is Screen ke liye Colors -->
+    <color name="screen_background_light_gray">#EFF6F7F8</color>
+    <color name="title_text_teal">#038175</color>
+    <color name="subtitle_text_dark_gray">#424242</color> <!-- Darker Gray for good contrast -->
+    <color name="card_label_text_color">#333333</color>  <!-- Text color for inside cards -->
+    <color name="card_default_background">#FFFFFF</color> <!-- Card background color --><!-- Blue 300 - Light & Pleasant -->
+
+
+
+    <color name="lockScreenBackground">#F0F4F8</color> <!-- Light Bluish Grey -->
+    <color name="lockScreenPrimary">#007BFF</color>   <!-- Bright Blue -->
+    <color name="lockScreenPrimaryDark">#0056b3</color>
+    <color name="lockScreenPrimaryText">#1A2A3A</color> <!-- Dark Blue/Grey Text -->
+    <color name="lockScreenSecondaryText">#506A85</color> <!-- Lighter Blue/Grey Text -->
+    <color name="navigationBarBackground">#FFFFFF</color>
+    <color name="navigationIconTint">@color/lockScreenPrimary</color>
+
+
+
+    <color name="parent_or_child">#E03EACBA</color>
+
+
+
+
+    <!-- Existing colors from your splash screen (assuming these names) -->
+    <color name="medium_light_purple_muted1">#A092B8</color> <!-- Example, replace with your actual color -->
+    <color name="splash_text_title_white1">#FFFFFF</color>
+    <color name="splash_text_subtitle_white_subtle1">#E0E0E0</color>
+
+
+    <!-- New colors for Intro Screens -->
+    <color name="light_cream_background">#FFF9E6</color>
+    <color name="intro_title_color">#3E2723</color> <!-- A deep brown, good contrast on cream -->
+    <color name="intro_description_color">#5D4037</color> <!-- A slightly lighter brown -->
+    <color name="dot_inactive_color">#D7CCC8</color> <!-- A light, muted color for inactive dots -->
+    <color name="intro_button_text_color">#FFFFFF</color>
+    <color name="intro_button_background_color">@color/medium_light_purple_muted</color> <!-- Using your app's theme color -->
+
+
+</resources>

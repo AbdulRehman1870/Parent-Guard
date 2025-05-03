@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsGeofence">
+
+    <!-- Controls Layout at the top -->
+    <LinearLayout
+        android:id="@+id/controls_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#CCFFFFFF"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true">
+
+        <!-- Button to Set Radius -->
+        <Button
+            android:id="@+id/btnSetRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Safe Zone Radius"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.AppCompat.Button.Colored" />
+        <!-- You can style this button further as needed -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Long press on map to add/remove safe zones."
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+    <!-- Map Fragment taking remaining space below controls -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/controls_layout"
+        tools:layout="@layout/activity_maps_geofence" />
+
+</RelativeLayout>

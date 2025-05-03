@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/oldSentimentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/dark_text"
+        android:layout_marginBottom="4dp"
+        tools:text="Text: I am so happy today!"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+    <TextView
+        android:id="@+id/oldSentimentTimestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/medium_text"
+        android:layout_marginBottom="6dp"
+        tools:text="Time: Oct 28, 2023 at 10:30 AM"/>
+
+    <TextView
+        android:id="@+id/oldSentimentAnalysis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/medium_text"
+        android:lineSpacingExtra="3dp"
+        tools:text="Analysis:\nJoy: 90%\nSadness: 5%"/>
+
+</LinearLayout>

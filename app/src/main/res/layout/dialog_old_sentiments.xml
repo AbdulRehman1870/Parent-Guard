@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialogTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historical Sentiments"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_text"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/dialogThresholdInfoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/medium_text"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        tools:text="Showing entries where any emotion score was ≥ 70%"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="350dp">
+
+        <LinearLayout
+            android:id="@+id/oldSentimentsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Old sentiment entries will be added here dynamically -->
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/noOldSentimentsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No relevant old sentiments found for the current threshold."
+        android:textSize="15sp"
+        android:textColor="@color/status_text_color"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

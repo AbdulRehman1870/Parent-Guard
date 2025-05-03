@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Active/Selected Dot (Capsule/Pill Shape with horizontal spacing via layer-list) -->
+    <item android:state_selected="true">
+        <layer-list>
+            <!-- Yeh item actual shape ke liye hai, aur iske attributes (left, right) padding/inset ka kaam karenge -->
+            <item
+                android:left="4dp"
+                android:right="4dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#038175"/> <!-- Active dot ka color -->
+                    <corners android:radius="4dp" />   <!-- Height ka adha (agar height 8dp hai) -->
+                    <size
+                        android:width="10dp"
+                        android:height="4dp" />  <!-- Active dot ka actual visual size -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Inactive/Default Dot (Chhota Gol Shape with horizontal spacing via layer-list) -->
+    <item>
+        <layer-list>
+            <!-- Yeh item actual shape ke liye hai, aur iske attributes (left, right) padding/inset ka kaam karenge -->
+            <item
+                android:left="4dp"
+                android:right="4dp">
+                <shape android:shape="oval">
+                    <solid android:color="#CCCCCC" /> <!-- Inactive dot ka color -->
+                    <size
+                        android:width="4dp"
+                        android:height="4dp" />   <!-- Inactive dot ka actual visual size -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

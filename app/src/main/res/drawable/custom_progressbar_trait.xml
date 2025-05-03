@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="5dp" />
+            <solid android:color="@color/progress_bar_bg_default" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="5dp" />
+                <solid android:color="@color/accent_tip_blue" /> <!-- Default color, will be tinted -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

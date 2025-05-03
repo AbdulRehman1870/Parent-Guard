@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background_light_gray"
+    android:padding="16dp"
+    tools:context=".parentorchild">
+
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ParentGuard"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+    android:textColor="@color/title_text_teal"
+    android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whose phone is this?"
+        android:textSize="22sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+    android:layout_marginBottom="24dp"
+    android:textColor="@color/subtitle_text_dark_gray"
+    android:fontFamily="sans-serif"/>
+
+    <!-- Parent Option -->
+    <FrameLayout
+        android:id="@+id/parentOptionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/clickable_container_background"
+    android:contentDescription="Select if this is the Parent's phone"
+    android:padding="8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:src="@drawable/parent_phone"
+    android:scaleType="fitCenter"
+    app:shapeAppearanceOverlay="@style/ShapeAppearance.App.RoundedImage"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/subtitle_text_dark_gray" />
+</FrameLayout>
+
+    <!-- Child Option -->
+<FrameLayout
+android:id="@+id/childOptionContainer"
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="1"
+android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/clickable_container_background"
+    android:contentDescription="Select if this is the Child's phone"
+    android:padding="8dp">
+
+<com.google.android.material.imageview.ShapeableImageView
+android:id="@+id/imageView2"
+android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:src="@drawable/child_phone"
+    android:scaleType="fitCenter"
+    app:shapeAppearanceOverlay="@style/ShapeAppearance.App.RoundedImage"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/subtitle_text_dark_gray"/>
+
+    </FrameLayout>
+
+    </LinearLayout>

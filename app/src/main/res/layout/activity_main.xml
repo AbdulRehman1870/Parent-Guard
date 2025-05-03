@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/medium_light_purple_muted"
+    tools:context=".MainActivity">
+
+
+<ImageView
+android:id="@+id/appLogoImageView"
+android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:src="@drawable/parenting_app_logo"
+    android:scaleType="fitCenter"
+    android:contentDescription="App Logo"
+    android:layout_marginBottom="-20dp"/>
+
+    <!-- App Name TextView -->
+<TextView
+android:id="@+id/appNameTextView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:fontFamily="sans-serif"
+    android:text="Parent Guard"
+    android:textColor="@color/splash_text_title_white"
+    android:textSize="36sp"
+    android:textStyle="bold"/>
+
+    <!-- App Slogan TextView -->
+<TextView
+android:id="@+id/appSloganTextView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="8dp"
+    android:layout_marginBottom="55dp"
+    android:fontFamily="sans-serif-light"
+    android:text="Securing Digital Path"
+    android:textColor="@color/splash_text_subtitle_white_subtle"
+    android:textSize="16sp"
+    android:textStyle="normal"
+    android:paddingHorizontal="30dp"
+    android:gravity="center_horizontal"/>
+
+    </LinearLayout>

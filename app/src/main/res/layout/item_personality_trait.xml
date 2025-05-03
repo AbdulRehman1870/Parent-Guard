@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/trait_card_background"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp"
+    android:elevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/traitEmojiTextVie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:text="😊"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/traitNameTextVie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Trait Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/traitScoreTextVie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0.00 (Category)"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary_dark"
+            android:layout_marginEnd="10dp"/>
+
+        <ProgressBar
+            android:id="@+id/traitScoreProgressBa"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="10dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/custom_progressbar_trait" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💡 Positive Insights:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/accent_insight_green"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/traitFeedbackTextVie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Positive feedback about the trait will appear here."
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary_dark"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="👉 Parent Tip:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/accent_tip_blue"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/traitParentTipTextVie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actionable tips for parents will appear here."
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary_dark"
+        android:lineSpacingExtra="4dp"/>
+
+</LinearLayout>

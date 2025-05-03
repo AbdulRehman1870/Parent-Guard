@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Mobile Screen Time"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Main Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Allowed Time Slot"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/editTextFromTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/modern_button_background"
+                    android:hint="Select start time"
+                    android:textColorHint="@color/textColorSecondary"
+                    android:textColor="@color/textColorPrimary"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:focusable="false"
+                    android:layout_marginBottom="20dp"/>
+
+                <EditText
+                    android:id="@+id/editTextToTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/modern_button_background"
+                    android:hint="Select end time"
+                    android:textColorHint="@color/textColorSecondary"
+                    android:textColor="@color/textColorPrimary"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:focusable="false"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Security"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/modern_button_background"
+                    android:hint="Enter password"
+                    android:textColorHint="@color/textColorSecondary"
+                    android:textColor="@color/textColorPrimary"
+                    android:inputType="textPassword"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <EditText
+                    android:id="@+id/editTextConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/modern_button_background"
+                    android:hint="Confirm password"
+                    android:textColorHint="@color/textColorSecondary"
+                    android:textColor="@color/textColorPrimary"
+                    android:inputType="textPassword"
+
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Save Button: Using MaterialButton for better styling options -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Save Settings"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="16sp"
+            app:backgroundTint="@color/colorPrimary"
+            app:cornerRadius="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>

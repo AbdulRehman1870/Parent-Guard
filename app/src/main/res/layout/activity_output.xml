@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/app_bg_light"
+    tools:context=".output_Activity"> <!-- Make sure context matches your activity name -->
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toxicity Analysis Results"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/text_title_cute"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Threshold Selector Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card_rounded_cute"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alert Threshold:"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary_cute"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/thresholdSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_spinner_cute"
+            android:spinnerMode="dropdown"/>
+    </LinearLayout>
+
+    <!-- Latest Scanned Text Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card_rounded_cute"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latest Scanned Text:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary_cute"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/originalTextTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary_cute"
+            android:background="@drawable/bg_textview_rounded_cute"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <!-- Timestamp Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card_rounded_cute"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timestamp:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary_cute"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/timestampTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary_cute"
+            android:background="@drawable/bg_textview_rounded_cute"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/analysisBreakdownTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Analysis Breakdown:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/text_title_cute"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="ok"
+        android:background="@drawable/bg_card_rounded_cute"
+        android:padding="0dp"> <!-- Padding is handled by the card bg now -->
+        <LinearLayout
+            android:id="@+id/analysisBreakdownLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"/> <!-- Add some padding inside the scroll content -->
+    </ScrollView>
+
+</LinearLayout>

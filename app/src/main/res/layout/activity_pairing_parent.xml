@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF6F7F8"
+    tools:context=".pairing_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:text="ParentGuard"
+    android:textSize="40dp"
+    android:textStyle="bold"
+    android:layout_gravity="center"
+    android:layout_marginTop="150dp"
+    android:textColor="#038175"
+    android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:text="To pair the device  to your account you need it here in your hand. Have you got it? "
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:padding="16dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/textViewPairing" /> <!-- Added ID -->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#038175"
+        android:layout_marginTop="80dp"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text="YES" />
+</LinearLayout>

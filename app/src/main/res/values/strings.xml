@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">parental_control</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps_geofence">MapsGeofence</string>
+    <!-- Intro Screen Titles -->
+    <string name="intro_title_personality">Personality Trait Analysis</string>
+    <string name="intro_title_sentiment">Sentimental Analysis</string>
+    <string name="intro_title_toxicity">Toxicity Analysis</string>
+    <string name="intro_title_screentime">Screen Time Management</string>
+    <string name="intro_title_location_geofence">Live Location and GeoFencing</string>
+
+    <!-- Intro Screen Descriptions -->
+    <string name="intro_desc_personality">Understand your child\'s unique personality traits. Our analysis helps you gain insights into their developing character.</string>
+    <string name="intro_desc_sentiment">Track your child\'s emotional well-being. This feature analyzes sentiments expressed in their communications to keep you informed.</string>
+    <string name="intro_desc_toxicity">Detect and address harmful content. Our system scans for toxic language in your child\'s interactions, ensuring a safer digital space.</string>
+    <string name="intro_desc_screentime">Promote healthy digital habits. Easily manage and set limits on your child\'s screen time, and block device access when needed.</string>
+    <string name="intro_desc_location_geofence">Stay connected with your child\'s whereabouts in real-time. Set up safe zones with GeoFencing and get alerts when they enter or leave.</string>
+    <!-- Button Text -->
+    <string name="next">Next</string>
+    <string name="get_started">Get Started</string>
+
+    <!-- Content Descriptions -->
+    <string name="intro_image_description">Feature illustration</string>
+    <string name="parent_guard_logo">Parent Guard App Logo</string>
+
+</resources>

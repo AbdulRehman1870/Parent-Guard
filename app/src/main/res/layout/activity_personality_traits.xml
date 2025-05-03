@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/app_bg_color"
+    tools:context=".Personality_Traits">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/mainTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child's Personality Insights"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary_dark"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/personalitySummaryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary_dark"
+            android:background="@drawable/summary_background"
+            android:padding="16dp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="12dp"
+        android:elevation="2dp"
+        android:text="Loading summary insights..."/>
+
+        <!-- New TextView for batch progress -->
+        <TextView
+            android:id="@+id/batchProgressTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary_dark"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"/> <!-- Initially gone -->
+
+        <LinearLayout
+            android:id="@+id/traitsContainerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/graphTriggerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Tap here for a visual summary of personality traits"
+            android:textSize="16sp"
+            android:textColor="@color/accent_tip_blue"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/noDataTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No personality data available yet.\nInsights will appear here once data is processed."
+            android:textSize="16sp"
+            android:textColor="@color/text_no_data"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:lineSpacingExtra="6dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/finalMotivationalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Every child is unique! 🏆 Your support helps their personality shine even brighter."
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:textColor="@color/accent_motivation_blue"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"/>
+    </LinearLayout>
+</ScrollView>

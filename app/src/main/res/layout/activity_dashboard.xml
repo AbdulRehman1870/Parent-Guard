@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".dashboard">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+    app:elevation="0dp">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/material_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/cardScreenTimeBg"
+    app:title=""
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <!-- Custom TextView for Centered and Styled Title -->
+    <TextView
+        android:id="@+id/toolbar_title_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parent-Guard"
+        android:layout_gravity="center"
+        android:textAppearance="@style/Toolbar.TitleText.Custom" />
+    <!-- Using a new style for more control -->
+
+</com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+<FrameLayout
+android:id="@+id/fragment_container"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+android:id="@+id/bottom_navigation_view"
+android:layout_width="match_parent"
+android:layout_height="56dp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bottom_nav_background"
+    app:menu="@menu/menu"
+    app:itemIconSize="30dp"
+    app:itemIconTint="@color/bottom_nav_item_tint_selector"
+    app:itemTextColor="@color/bottom_nav_item_tint_selector"
+    app:labelVisibilityMode="unlabeled"
+    app:itemRippleColor="@android:color/transparent"
+    app:elevation="8dp"
+    app:itemActiveIndicatorStyle="@null"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

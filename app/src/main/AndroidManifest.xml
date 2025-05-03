@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Removed duplicate POST_NOTIFICATIONS permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" /> <!-- Added maxSdkVersion for Android 13+ compatibility -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" /> <!-- Added maxSdkVersion as it's largely not needed/deprecated for app-specific storage post Android 10 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.BIND_INPUT_METHOD"
+        tools:ignore="ProtectedPermissions" />
+    <!-- For Android 13 (API 33) and above, if targeting, you might need READ_MEDIA_IMAGES, READ_MEDIA_VIDEO, READ_MEDIA_AUDIO instead of READ_EXTERNAL_STORAGE -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Parental_control"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Parental_control">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Declare IntroActivity - Added here -->
+        <activity
+            android:name=".IntroActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Parental_control.NoActionBar"> <!-- Ensure this theme exists or use your app's theme -->
+        </activity>
+
+        <activity
+            android:name=".Personality_Traits"
+            android:exported="false" />
+
+        <service
+            android:name=".ScreenTimeService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location|dataSync"
+            tools:ignore="ForegroundServicePermission" />
+
+        <activity
+            android:name=".lock_screen"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:lockTaskMode="always"
+            android:resizeableActivity="true"
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".set_time"
+            android:exported="false" />
+        <activity
+            android:name=".Display_Sentiments"
+            android:exported="false" />
+        <activity
+            android:name=".output_Activity"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".DisplayInstalledApps"
+            android:exported="false" />
+        <activity
+            android:name=".InstalledApps"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDjO1uqCjM1ZB4lFLkLEMT78-3gspXgTvU" />
+
+        <activity
+            android:name=".MapsGeofence"
+            android:exported="true"
+            android:label="@string/title_activity_maps_geofence" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".paired_successfull"
+            android:exported="false" />
+        <activity
+            android:name=".Enter_code"
+            android:exported="false" />
+        <activity
+            android:name=".pairing_parent"
+            android:exported="false" />
+        <activity
+            android:name=".child_setname"
+            android:exported="false" />
+        <activity
+            android:name=".parentorchild"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".location"
+            android:exported="false" />
+        <activity
+            android:name=".vulgar_detection"
+            android:exported="false" />
+        <activity
+            android:name=".daily_time"
+            android:exported="false" />
+        <activity
+            android:name=".youtube_age"
+            android:exported="false" />
+        <activity
+            android:name=".block_access"
+            android:exported="false" />
+
+        <!-- MainActivity was here, moved it up to be the first activity for clarity as it's the launcher -->
+
+        <service
+            android:name=".LocationForegroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+        <service
+            android:name=".MyKeyboardService"
+            android:exported="true"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+    </application>
+
+</manifest>

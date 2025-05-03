@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/icon_selected_green" android:state_checked="true" /> <!-- Green when selected -->
+    <item android:color="@color/icon_unselected_grey" android:state_checked="false"/> <!-- Grey when not selected -->
+    <item android:color="@color/icon_unselected_grey" /> <!-- Default color -->
+</selector>

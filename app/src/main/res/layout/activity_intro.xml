@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".IntroActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_intro"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/bottom_navigation_layout"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_dots_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/button_next_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:text="@string/next"
+            android:textColor="@color/intro_button_text_color"
+            android:backgroundTint="@color/intro_button_background_color"
+            android:paddingVertical="12dp"
+            android:textSize="16sp"
+            app:cornerRadius="25dp"/>
+
+        <Button
+            android:id="@+id/button_get_started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:text="@string/get_started"
+            android:visibility="gone"
+            android:textColor="@color/intro_button_text_color"
+            android:backgroundTint="@color/intro_button_background_color"
+            android:paddingVertical="12dp"
+            android:textSize="16sp"
+            app:cornerRadius="25dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

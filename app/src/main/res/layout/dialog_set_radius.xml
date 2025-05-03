@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Radius in Meters:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextDialogRadius"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:hint="e.g., 500"
+        android:autofillHints="false" />
+
+</LinearLayout>

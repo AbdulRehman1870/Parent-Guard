@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/light_blue_background"
+    tools:context=".Display_Sentiments">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child's Emotional State"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Alert Threshold Spinner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alert Threshold:"
+                android:textSize="16sp"
+                android:textColor="@color/medium_text"
+                android:layout_marginEnd="8dp"/>
+
+            <Spinner
+                android:id="@+id/alertThresholdSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+        </LinearLayout>
+
+
+        <!-- Dominant Emotion Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dominantEmotionCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/white">
+            <!-- ... (Dominant Emotion Card content remains the same) ... -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Currently Feeling:"
+                    android:textSize="16sp"
+                    android:textColor="@color/medium_text"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/dominantEmotionEmojiTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="😊"
+                    android:textSize="70sp"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/dominantEmotionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Joy - 75%"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#2C3E50"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/dominantEmotionMessageTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="#4A4A4A"
+                    android:lineSpacingExtra="4dp"
+                    tools:text="Your child is happy and engaged. Great job!"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Emotion Breakdown Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emotion Breakdown"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Pie Chart for Emotion Distribution -->
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/emotionsPieChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- View Old Sentiments Link -->
+        <TextView
+            android:id="@+id/viewOldSentimentsLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📜 View Historical Sentiments"
+            android:textSize="16sp"
+            android:textColor="@color/accent_link_blue"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Analyzed Text Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/analyzedTextCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white">
+            <!-- ... (Analyzed Text Card content remains the same) ... -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latest Analyzed Activity:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/card_title_text"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/originalTextTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/card_content_text"
+                    android:layout_marginBottom="4dp"
+                    tools:text="Original Text: I had a great time playing today!"/>
+
+                <TextView
+                    android:id="@+id/timestampTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@android:color/darker_gray"
+                    tools:text="Timestamp: 2023-10-27 10:30:00"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Fallback/Status TextView -->
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/status_text_color"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            tools:text="Loading sentiment data..."
+            tools:visibility="visible"/>
+
+    </LinearLayout>
+</ScrollView>

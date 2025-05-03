@@ -1,0 +1,108 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Parental_control" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:statusBarColor">#e3ebf9</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="btnLightTheme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:background">@drawable/btn_white_ripple</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- Add more attributes to customize the button's appearance -->
+    </style>
+
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/dialog_rounded_bg</item>
+        <!-- Aap yahan aur bhi customizations add kar sakte hain, jaise: -->
+        <!-- <item name="android:background">@color/dialog_background_color</item> -->
+        <!-- <item name="android:textColorPrimary">@color/dialog_text_color</item> -->
+    </style>
+
+
+    <style name="btnDarkTheme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:background">@drawable/btn_ripple</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- Add more attributes to customize the button's appearance -->
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">64dp</item>
+        <item name="android:height">32dp</item>
+        <item name="marginHorizontal">8dp</item>
+        <item name="shapeAppearance">?attr/shapeAppearanceCornerExtraLarge</item>
+        <item name="android:color">@color/colorPrimaryLight</item> <!-- Define colorPrimaryLight, e.g., #E1F5FE -->
+    </style>
+
+
+
+
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/toolbarTitleColor</item>
+        <!-- You can adjust textSize here if needed, but Headline6 provides a good default -->
+        <!-- <item name="android:textSize">20sp</item> -->
+    </style>
+
+    <!-- Style for the BottomNavigationView Active Item Indicator (for unlabeled items) -->
+    <style name="App.Custom.Indicator.Unlabeled" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">48dp</item>
+        <item name="android:height">48dp</item>
+        <item name="marginHorizontal">0dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Full</item>
+        <item name="android:color">@color/colorPrimaryLight</item>
+    </style>
+
+    <!-- You might need this ShapeAppearance if not already available from Material3 or if not using Material3 theme directly -->
+    <style name="ShapeAppearance.Material3.Corner.Full" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item> <!-- For a circle -->
+    </style>
+
+
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!-- ... other theme attributes -->
+    </style>
+
+    <!-- Style for the rounded images -->
+    <style name="ShapeAppearance.App.RoundedImage" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">40dp</item> <!-- Adjust corner radius as desired -->
+    </style>
+
+
+
+
+
+    <style name="Toolbar.TitleText.Custom" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/toolbarTitleColor</item> <!-- Define toolbarTitleColor in colors.xml, e.g., #212121 -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item> <!-- Adjust size as needed -->
+    </style>
+
+
+
+    <style name="Theme.Parental_control" parent="Base.Theme.Parental_control" />
+
+
+
+
+
+    <style name="Theme.Parental_control.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/medium_light_purple_muted</item>
+        <!-- other items -->
+    </style>
+
+
+</resources>

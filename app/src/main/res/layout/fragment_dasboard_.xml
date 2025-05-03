@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- App Usage Category Pie Chart Section (NEW) -->
+        <LinearLayout
+            android:id="@+id/app_category_pie_chart_section"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:background="@drawable/activity_bg_rounded_corners"
+            android:backgroundTint="#EBEDEF"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App Usage Categories"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/CategoryPieChart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <!-- Screen Time Section (Bar Chart) - Yeh neeche aa gaya -->
+        <LinearLayout
+            android:id="@+id/screentime_section"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:orientation="vertical"
+            android:background="@drawable/activity_bg_rounded_corners"
+            android:backgroundTint="#EBEDEF"
+            android:elevation="4dp"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Screen Time "
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/screenTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="Loading..."
+                android:textColor="#FF5722"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/usageChart"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginTop="0dp" />
+
+        </LinearLayout>
+
+        <!-- Used Apps Section (REMOVED) -->
+        <!--
+        <LinearLayout
+            android:id="@+id/usedapps_section" ... />
+        -->
+
+        <!-- Location Section (REMOVED) -->
+        <!--
+        <LinearLayout
+            android:id="@+id/location_section" ... />
+        -->
+
+    </LinearLayout>
+</ScrollView>
